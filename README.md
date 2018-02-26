@@ -1,13 +1,19 @@
-Metadex
+MetaDEx: The Metagenomic Data Explorer
 =======
+
+Comparative metagenomics is based on determining features of interest from differentially abundant counts. Differential abundance does not imply importance to one's study, and can be the result of differences in diversity. A key question of interest in comparative metagenomics is to identify the role of environment on the functionome. Essentially, which gene functions are undergoing selection pressures in a given environment?
+
+MetaDEx is a simple Python package for determining environmentally relevant functions and subsystems for comparative metagenomic data. The package receives annotations from MG-RAST and continues with a straightforward workflow for determining genes and subsystems of interest.
+
 
 Get Study Information from MG-RAST
 ----------------------------------
 
 MG-RAST assigns each metagenome a metagenome ID (mgm...). For each
 metagenome you would like to include in your study, you will need:
--metagenome ID - corresponding assigned group - corresponding assigned
-sample ID (within the group can be 1, 2, 3; or something more specfic)
+- metagenome ID 
+- corresponding assigned group 
+- corresponding assigned sample ID (within the group can be 1, 2, 3; or something more specfic)
 
 Download Gene Counts Matrix from MG-RAST
 ----------------------------------------
