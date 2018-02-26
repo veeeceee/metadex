@@ -95,8 +95,8 @@ represents wildcard.
 Can accept any folder name, so can load counts data that has been
 annotated and/or normalised.
 
-Output
-------
+### Output
+
 
 Creates a Study, which contains:
 
