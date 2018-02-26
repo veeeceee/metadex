@@ -5,6 +5,13 @@ Comparative metagenomics is based on determining features of interest from diffe
 
 MetaDEx is a simple Python package for determining environmentally relevant functions and subsystems for comparative metagenomic data. The package receives annotations from MG-RAST and continues with a straightforward workflow for determining genes and subsystems of interest.
 
+Install MetaDEx
+----------------
+MetaDEx can be installed via PyPI (Python 3.5+ only):
+
+    pip install metadex
+
+
 
 Get Study Information from MG-RAST
 ----------------------------------
