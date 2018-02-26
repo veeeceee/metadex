@@ -146,7 +146,7 @@ their 'Analyze' interface, Metadex leverages the Boruta feature
 selection method to determine differences between groups and samples and
 each level of functional hierarchy.
 
-Boruta uses a specific threshold for feature selection (see link [here]
+Boruta uses a specific threshold for feature selection (see [here]
 (http://danielhomola.com/2015/05/08/borutapy-an-all-relevant-feature-selection-method/)) and each can be manipulated as per your needs.
 
     metadex.Study.determine_subsystems_of_interest(level, percentage)
