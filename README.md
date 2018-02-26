@@ -40,12 +40,12 @@ This function asynchronously calls the MG-RAST API to get all metagenomic annota
 
 ### Input
 Args:
--study (str): the name of the directory where all the counts will be located
--metagenomeGroupDict (dict): dictionary of the format {MGRAST id: group}
--source (str): annotation source, e.g. RefSeq, GenBank, SEED. See MG-RAST API docs
--evalue (int): e-value cut-off. See MG-RAST API docs
--identity (int): percentage identity cut-off for annotations. See MG-RAST API docs
--length (int): length parameter for MG-RAST API call. See MG-RAST API docs
+- study (str): the name of the directory where all the counts will be located
+- metagenomeGroupDict (dict): dictionary of the format {MGRAST id: group}
+- source (str): annotation source, e.g. RefSeq, GenBank, SEED. See MG-RAST API docs
+- evalue (int): e-value cut-off. See MG-RAST API docs
+- identity (int): percentage identity cut-off for annotations. See MG-RAST API docs
+- length (int): length parameter for MG-RAST API call. See MG-RAST API docs
 
 
 Output
