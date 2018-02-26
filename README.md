@@ -1,13 +1,17 @@
 MetaDEx: The Metagenomic Data Explorer
 =======
 
+
 Comparative metagenomics is based on determining features of interest from differentially abundant counts. Differential abundance does not imply importance to one's study, and can be the result of differences in diversity. A key question of interest in comparative metagenomics is to identify the role of environment on the functionome. Essentially, which gene functions are undergoing selection pressures in a given environment?
 
 MetaDEx is a simple Python package for determining environmentally relevant functions and subsystems for comparative metagenomic data. The package receives annotations from MG-RAST and continues with a straightforward workflow for determining genes and subsystems of interest.
 
 Install MetaDEx
 ----------------
-MetaDEx can be installed via PyPI (Python 3.5+ only):
+### Requirements:
+MIT License, Python 3.5+, packages: pandas, numpy, aiohttp, asyncio, Boruta, scikitbio, scikit-learn, seaborn, matplotlib, brunel, biopython
+
+MetaDEx can be installed via PyPI:
 
     pip install metadex
 
