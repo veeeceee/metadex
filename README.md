@@ -9,7 +9,7 @@ MetaDEx is a simple Python package for determining environmentally relevant func
 Install MetaDEx
 ----------------
 ### Requirements:
-MIT License, Python 3.5+, packages: pandas, numpy, aiohttp, asyncio, Boruta, scikitbio, scikit-learn, seaborn, matplotlib, brunel, biopython
+Python 3.5+, packages: pandas, numpy, aiohttp, asyncio, Boruta, scikitbio, scikit-learn, seaborn, matplotlib, brunel, biopython
 
 MetaDEx can be installed via PyPI:
 
