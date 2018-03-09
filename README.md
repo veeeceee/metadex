@@ -180,6 +180,6 @@ Visualising Diversity for Gene
 Understanding how a gene seen in an environment is distributed is a key
 insight to understanding the link between gene function and environment.
 Metadex provides ways to depict both the quantitative and qualitative
-facts of this relationship within one' study:
+facts of this relationship within one's study:
 
     metadex.Study.visualise_diversity_for_gene(geneName, searchString)
