@@ -1,13 +1,30 @@
-Metadex
+MetaDEx: The Metagenomic Data Explorer
 =======
+
+
+Comparative metagenomics is based on determining features of interest from differentially abundant counts. Differential abundance does not imply importance to one's study, and can be the result of differences in diversity. A key question of interest in comparative metagenomics is to identify the role of environment on the functionome. Essentially, which gene functions are undergoing selection pressures in a given environment?
+
+MetaDEx is a simple Python package for determining environmentally relevant functions and subsystems for comparative metagenomic data. The package receives annotations from MG-RAST and continues with a straightforward workflow for determining genes and subsystems of interest.
+
+Install MetaDEx
+----------------
+### Requirements:
+Python 3.5+, packages: pandas, numpy, aiohttp, asyncio, Boruta, scikitbio, scikit-learn, seaborn, matplotlib, brunel, biopython
+
+MetaDEx can be installed via PyPI:
+
+    pip install metadex
+
+
 
 Get Study Information from MG-RAST
 ----------------------------------
 
 MG-RAST assigns each metagenome a metagenome ID (mgm...). For each
 metagenome you would like to include in your study, you will need:
--metagenome ID - corresponding assigned group - corresponding assigned
-sample ID (within the group can be 1, 2, 3; or something more specfic)
+- metagenome ID 
+- corresponding assigned group 
+- corresponding assigned sample ID (within the group can be 1, 2, 3; or something more specfic)
 
 Download Gene Counts Matrix from MG-RAST
 ----------------------------------------
@@ -34,12 +51,12 @@ This function asynchronously calls the MG-RAST API to get all metagenomic annota
 
 ### Input
 Args:
-        study (str): the name of the directory where all the counts will be located
-        metagenomeGroupDict (dict): dictionary of the format {MGRAST id: group}
-        source (str): annotation source, e.g. RefSeq, GenBank, SEED. See MG-RAST API docs
-        evalue (int): e-value cut-off. See MG-RAST API docs
-        identity (int): percentage identity cut-off for annotations. See MG-RAST API docs
-        length (int): length parameter for MG-RAST API call. See MG-RAST API docs
+- study (str): the name of the directory where all the counts will be located
+- metagenomeGroupDict (dict): dictionary of the format {MGRAST id: group}
+- source (str): annotation source, e.g. RefSeq, GenBank, SEED. See MG-RAST API docs
+- evalue (int): e-value cut-off. See MG-RAST API docs
+- identity (int): percentage identity cut-off for annotations. See MG-RAST API docs
+- length (int): length parameter for MG-RAST API call. See MG-RAST API docs
 
 
 Output
@@ -89,8 +106,8 @@ represents wildcard.
 Can accept any folder name, so can load counts data that has been
 annotated and/or normalised.
 
-Output
-------
+### Output
+
 
 Creates a Study, which contains:
 
@@ -140,7 +157,7 @@ their 'Analyze' interface, Metadex leverages the Boruta feature
 selection method to determine differences between groups and samples and
 each level of functional hierarchy.
 
-Boruta uses a specific threshold for feature selection (see link [here]
+Boruta uses a specific threshold for feature selection (see [here]
 (http://danielhomola.com/2015/05/08/borutapy-an-all-relevant-feature-selection-method/)) and each can be manipulated as per your needs.
 
     metadex.Study.determine_subsystems_of_interest(level, percentage)
@@ -163,6 +180,6 @@ Visualising Diversity for Gene
 Understanding how a gene seen in an environment is distributed is a key
 insight to understanding the link between gene function and environment.
 Metadex provides ways to depict both the quantitative and qualitative
-facts of this relationship within one' study:
+facts of this relationship within one's study:
 
     metadex.Study.visualise_diversity_for_gene(geneName, searchString)
